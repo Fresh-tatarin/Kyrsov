@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Посещения пациентов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_auth.css') }}">
+</head>
+<body style="overflow: hidden">
+<div align="center" class="box">
+    <h2>Введите интересующий статус посещения и дату записей на приём</h2>
+    <div>
+        <form action="" method="get">
+
+    <div>
+        <label for="otmetka">Статус посещения:
+            <input type="text" name="otmetka" required>
+        </label>
+    </div>
+    <div>
+        <label for="date_visit">Дата записей на приём:
+            <input type="date" name="date_visit" value="dd/mm/yyyy" required>
+        </label>
+    </div>
+
+    <input type="submit" value="Получить данные">
+</form>
+    </div><br>
+    <a class="button" href="{{ url_for('request.get_bp_index') }}">Меню запросов</a><br>
+    <a class="button" href="{{ url_for('exit') }}">Выход</a>
+</div>
+</body>
+</html>

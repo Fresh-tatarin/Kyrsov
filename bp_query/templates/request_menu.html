@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню запросов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_query.css') }}">
+
+</head>
+<body style="overflow: hidden">
+<div align="center">
+    <h3>Меню запросов</h3>
+</div>
+<div align="center" class="card">
+    <div class="content">
+    <a href="{{ url_for('request.task1') }}">Список врачей определенной специализации.</a>
+    <a href="{{ url_for('request.task2') }}">Список пациентов, записанных к определенному врачу.</a>
+    <a href="{{ url_for('request.task3') }}">Карта определенного пациента.</a>
+    <a href="{{ url_for('request.task6') }}">Посещения пациентов.</a><br><br><br>
+    <a class="red" href="{{ url_for('index') }}">В главное меню</a>
+    </div>
+</div>
+</body>
+</html>
