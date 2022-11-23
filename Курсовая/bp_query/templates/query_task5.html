@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пациенты определенного года рождения</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_auth.css') }}">
+</head>
+<body style="overflow: hidden">
+<div align="center" class="box">
+    <h2>Введите интересующий год</h2>
+    <div>
+        <form action="" method="get">
+    <div>
+        <label for="birthday">Год рождения:
+            <input type="text" name="birthday" required>
+        </label>
+    </div>
+
+    <input type="submit" value="Получить данные">
+</form>
+    </div><br>
+    <a class="button" href="{{ url_for('request.get_bp_index') }}">Меню запросов</a><br>
+    <a class="button" href="{{ url_for('exit') }}">Выход</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+    "director": [
+        "request.get_bp_index",
+        "request.task1",
+        "request.task2",
+        "request.task3",
+        "request.task4",
+        "request.task5",
+        "request.task6",
+        "auth.login_page",
+        "update.get_bp_index",
+        "update.add",
+        ""
+    ],
+    "doctor": [
+        "request.get_bp_index",
+        "request.task2",
+        "request.task3",
+        "request.task4",
+        "request.task6",
+        "auth.login_page",
+        ""
+    ],
+    "external": [
+        "basket.cart_init",
+        "basket.cart_speciality",
+        "basket.cart_doctor",
+        "basket.cart_timetable",
+        "basket.cart_confirm",
+        "auth.login_page",
+        ""
+    ],
+    "unauthorized": [
+        "auth.login_page",
+        "auth.register_page"
+    ]
+}
